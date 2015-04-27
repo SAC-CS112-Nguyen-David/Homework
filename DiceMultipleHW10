@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 		
-public class Guess {
+public class DiceMultiple {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
