@@ -1,15 +1,21 @@
 import java.util.Scanner;
 import java.util.Random;
 		
-public class DiceMultiple {
+public class Guess {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Random randomNumbers = new Random();
+		String c;
 		int face1;
 		int face2;
 		int face3;
 		int totals[] = new int[19];
+		System.out.println("Welcome to 3 Dice Roll");
+		System.out.println("Please Enter Number of Dice to Roll: ");
+		  Scanner input = new Scanner( System.in);
+		  String b = input.nextLine();
+		  c= b.toUpperCase();
 		{
 
 			for (int index = 0; index < totals.length; index++)
@@ -23,7 +29,7 @@ public class DiceMultiple {
 			}
 
 			System.out
-					.printf("%3s%12s%12s\n", "Sum", "Frequency", "Percentage");
+					.printf("%3s%12s%12s\n", "Points/Sum", "Frequency", "Percentage");
 			for (int k = 2; k < totals.length; k++) {
 				int percent = totals[k] / (360);
 				System.out.printf("%3d%12d%12d\n", k, totals[k], percent);
